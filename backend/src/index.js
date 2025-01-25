@@ -13,7 +13,7 @@ import { app, server } from "./lib/socket.js";
 
 dotenv.config();
 
-const PORT = "https://konvo-app.vercel.app/";
+const PORT = process.env.PORT;
 const __dirname = path.resolve();
 
 app.use(express.json());
